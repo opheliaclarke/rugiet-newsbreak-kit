@@ -32,6 +32,12 @@ section{padding:32px 0 8px}.sh{display:flex;align-items:baseline;gap:12px;margin
 .brand.rug{background:rgba(63,208,127,.14);color:var(--grn);border:1px solid rgba(63,208,127,.35)}
 .brand.fb{background:rgba(77,163,255,.14);color:var(--acc2);border:1px solid rgba(77,163,255,.4)}
 .date{font-size:11.5px;color:var(--mut)}.why{margin:0;font-size:13px;color:var(--mut)}
+.tgt{background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--cc,var(--acc2));border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:5px}
+.cchip{align-self:flex-start;font-size:10.5px;font-weight:800;letter-spacing:.3px;color:var(--cc);background:color-mix(in srgb,var(--cc) 16%,transparent);border:1px solid color-mix(in srgb,var(--cc) 40%,transparent);border-radius:5px;padding:2px 7px}
+.tline{font-size:12px;color:var(--mut)}.tline b{color:var(--txt)}
+.legend{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin:4px 0 6px}
+.litem{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--cc);border-radius:10px;padding:12px 14px}
+.litem .lh{font-weight:800;font-size:14px;color:var(--cc);margin-bottom:3px}.litem .lb{font-size:12.5px;color:var(--mut)}
 .dl{display:inline-block;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:8px 11px;font-size:12.5px;font-weight:600;color:var(--txt);text-align:center}.dl:hover{border-color:var(--acc2)}.dl.drive{color:var(--gold)}
 .heads{margin-top:2px;display:flex;flex-direction:column;gap:7px}.hl{font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--mut);font-weight:700}
 .cb{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:9px 10px;display:flex;flex-direction:column;gap:7px}
@@ -44,18 +50,26 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
 <header><div class="wrap">
   <a class="back" href="../">← Back to the full Creative Launch Kit</a>
   <h1>🎬 Rugiet — NewsBreak Image + Video Board</h1>
-  <p class="sub">Everything to run Rugiet on NewsBreak, which needs <b>1 image + 1 video per ad</b>. Below: 6 ready-to-upload <b>image ads</b> (built in the formats winning in ED right now), plus the <b>video ads</b> — 2 pulled live from the FB Ad Library as direct HD .mp4, the rest from your Drive library. Every card has a NewsBreak headline (≤90 chars) matched to it.</p>
+  <p class="sub">Everything to run Rugiet on NewsBreak, which needs <b>1 image + 1 video per ad</b>. Below: 6 ready-to-upload <b>image ads</b> + the <b>video ads</b> (2 live from the FB Ad Library as direct HD .mp4, rest from Drive) — each with a <b>NewsBreak headline (≤90)</b> and a <b>🎯 audience target</b>, grouped into clusters, set broad so the NB algorithm can learn and home in on your best buyers.</p>
   <div class="pills">
     <span class="pill"><b>6</b> image ads (1080²)</span>
-    <span class="pill"><b>2</b> direct FB HD videos</span>
-    <span class="pill"><b>10</b> priority Drive videos</span>
+    <span class="pill"><b>12</b> video ads</span>
+    <span class="pill"><b>6</b> audience clusters</span>
     <span class="pill"><b>30</b> headlines · all ≤90</span>
+    <span class="pill">Broad-first · algo-optimized</span>
   </div>
 </div></header>
 <div class="wrap">
 
 <section>
   <div class="note"><b>How to build a NewsBreak ad:</b> pick <b>1 image</b> + <b>1 video</b> from below, download both, and pair them in one ad (e.g. the "Biggest turn-off" image + the "Biggest turn-off" video, or mix any strong image with any strong video). Copy the headline under either as the ad title. Run 1 pairing = 1 ad, start ~8–10, kill losers by spend.</div>
+</section>
+
+<section id="targeting">
+  <div class="sh"><h2>🎯 Targeting strategy — broad-first</h2><span class="ct">let NewsBreak's algo find the buyers</span></div>
+  <p class="lead">Every creative below carries its own <b>🎯 target</b> because each hook speaks to a different mindset. But <b>don't over-narrow</b> — NewsBreak optimizes delivery once it has conversion data, so give it room. The move: set the <b>Conversions</b> objective, pick <b>gender + a wide age band</b>, one interest category at most (Health / Men's Health) <i>or none</i>, and let it learn for <b>3–5 days / ~30–50 clicks per ad</b> before you judge. NewsBreak's feed already skews <b>male, 45–65+, suburban</b> — the perfect ED demographic — so a broad setup lands on the right people fast. Group your campaigns by these audience clusters:</p>
+  <div class="legend"><div class="litem" style="--cc:#4da3ff"><div class="lh">A · Problem-Aware</div><div class="lb">Men actively wondering &#x27;why can&#x27;t I…&#x27; — searching for a reason + a fix.</div></div><div class="litem" style="--cc:#ff5a3c"><div class="lh">B · Switcher / Compare</div><div class="lb">On Viagra/generics or shopping brands (Hims, Ro) — sell the upgrade.</div></div><div class="litem" style="--cc:#ff7eb6"><div class="lh">C · Partner POV</div><div class="lb">Wives &amp; partners — and the men they nudge to try it.</div></div><div class="litem" style="--cc:#3fd07f"><div class="lh">D · Stamina / Last-Longer</div><div class="lb">&#x27;Finishing too soon&#x27; angle — a different pain than ED.</div></div><div class="litem" style="--cc:#ffcf5c"><div class="lh">E · Broad Curiosity</div><div class="lb">Widest cold reach — the hook does the qualifying; let NB explore.</div></div><div class="litem" style="--cc:#b98cff"><div class="lh">F · Social Proof</div><div class="lb">Warm / retargeting — stat-led, for people who&#x27;ve seen us.</div></div></div>
+  <div class="note"><b>Rule of thumb:</b> one cluster = one campaign (or ad set), 2–4 creatives each. Keep the age band wide (e.g. 40–65, not 50–55), don't stack interests, and let the pixel + NB's algorithm narrow to the best consumers on its own. Narrowing early starves the learning phase.</div>
 </section>
 
 <section>
@@ -67,6 +81,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★★</span><span class="verdict">Native search hook, top CTR</span></div>
         <h3>Search-intent mockup (light)</h3>
         <div class="meta"><span class="brand img">🖼 Rugiet image ad · 1080²</span><span class="date">ready to upload</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#4da3ff">A · Problem-Aware</span><span class="tline">🎯 Men · 40–65 · 'why do I lose it' searchers · <b>keep broad, let NB learn</b></span></div>
         <p class="why">Fakes the exact Google search a worried man types — reads as his own thought, not an ad. The #1 format scaling in ED right now, rebuilt clean for Rugiet.</p>
         <a class="dl" href="../img/autocomplete-light.png" download="rugiet-autocomplete-light.png">⬇ Download PNG (1080×1080)</a>
         <div class="heads"><span class="hl">NewsBreak headline (≤90)</span><div class="cb"><code>Why Do {State} Men Lose It Right When She&#x27;s Ready? The 15-Min Fix</code><div class="cbf"><span class="cc">65/90</span><button class="cp" data-copy="Why Do {State} Men Lose It Right When She&#x27;s Ready? The 15-Min Fix">Copy</button></div></div></div>
@@ -76,6 +91,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★★</span><span class="verdict">Dark-feed twin, evening runs</span></div>
         <h3>Search-intent mockup (dark)</h3>
         <div class="meta"><span class="brand img">🖼 Rugiet image ad · 1080²</span><span class="date">ready to upload</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#4da3ff">A · Problem-Aware</span><span class="tline">🎯 Men · 45–65 · aging · 'can't stay hard' · <b>keep broad, let NB learn</b></span></div>
         <p class="why">Same search-curiosity engine on a dark canvas — blends into the night-time feed where a lot of this traffic scrolls. Pair with the light version for A/B.</p>
         <a class="dl" href="../img/autocomplete-dark.png" download="rugiet-autocomplete-dark.png">⬇ Download PNG (1080×1080)</a>
         <div class="heads"><span class="hl">NewsBreak headline (≤90)</span><div class="cb"><code>&#x27;Why Can&#x27;t I Stay Hard Anymore?&#x27; — {City} Men Over 40 Found The Answer</code><div class="cbf"><span class="cc">70/90</span><button class="cp" data-copy="&#x27;Why Can&#x27;t I Stay Hard Anymore?&#x27; — {City} Men Over 40 Found The Answer">Copy</button></div></div></div>
@@ -85,6 +101,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★★</span><span class="verdict">Proven video hook, as static</span></div>
         <h3>&#x27;Biggest turn-off&#x27; hook</h3>
         <div class="meta"><span class="brand img">🖼 Rugiet image ad · 1080²</span><span class="date">ready to upload</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#ffcf5c">E · Broad Curiosity</span><span class="tline">🎯 Men · 30–65 · broad curiosity hook · <b>keep broad, let NB learn</b></span></div>
         <p class="why">The exact hook from Rugiet&#x27;s best-scrolling video ad, rebuilt as a static image so it works as the image half of the NB ad. Curiosity gap + clear payoff.</p>
         <a class="dl" href="../img/bedroom-hook.png" download="rugiet-bedroom-hook.png">⬇ Download PNG (1080×1080)</a>
         <div class="heads"><span class="hl">NewsBreak headline (≤90)</span><div class="cb"><code>The Biggest Turn-Off In The Bedroom, {City}? There&#x27;s A 15-Minute Fix</code><div class="cbf"><span class="cc">68/90</span><button class="cp" data-copy="The Biggest Turn-Off In The Bedroom, {City}? There&#x27;s A 15-Minute Fix">Copy</button></div></div></div>
@@ -94,6 +111,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★☆</span><span class="verdict">Proof grid, switch-driver</span></div>
         <h3>Comparison table</h3>
         <div class="meta"><span class="brand img">🖼 Rugiet image ad · 1080²</span><span class="date">ready to upload</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#ff5a3c">B · Switcher / Compare</span><span class="tline">🎯 Men · 40–65 · comparison shoppers · <b>keep broad, let NB learn</b></span></div>
         <p class="why">Head-to-head grid does the logical selling: ~15-min onset, 36-hr duration, 3 actives vs 1 — Rugiet green, generic red. Best for comparison-shoppers.</p>
         <a class="dl" href="../img/comparison-table.png" download="rugiet-comparison-table.png">⬇ Download PNG (1080×1080)</a>
         <div class="heads"><span class="hl">NewsBreak headline (≤90)</span><div class="cb"><code>We Compared Every ED Pill For {State} Men — One Works In 15 Minutes</code><div class="cbf"><span class="cc">67/90</span><button class="cp" data-copy="We Compared Every ED Pill For {State} Men — One Works In 15 Minutes">Copy</button></div></div></div>
@@ -103,6 +121,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★☆</span><span class="verdict">Sketch style, ad-blindness proof</span></div>
         <h3>1-vs-3 ingredient sketch</h3>
         <div class="meta"><span class="brand img">🖼 Rugiet image ad · 1080²</span><span class="date">ready to upload</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#ff5a3c">B · Switcher / Compare</span><span class="tline">🎯 Men · 40–65 · skeptics · educational · <b>keep broad, let NB learn</b></span></div>
         <p class="why">Hand-drawn look dodges &#x27;ad blindness&#x27; and frames generic pills as one-trick in a glance. Low-production feel that reads as organic.</p>
         <a class="dl" href="../img/ingredients-sketch.png" download="rugiet-ingredients-sketch.png">⬇ Download PNG (1080×1080)</a>
         <div class="heads"><span class="hl">NewsBreak headline (≤90)</span><div class="cb"><code>Your ED Pill Does 1 Job. This 3-in-1 Does 3 — {City} Men Switched</code><div class="cbf"><span class="cc">65/90</span><button class="cp" data-copy="Your ED Pill Does 1 Job. This 3-in-1 Does 3 — {City} Men Switched">Copy</button></div></div></div>
@@ -112,6 +131,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★☆</span><span class="verdict">Bold stat, instant scroll-stop</span></div>
         <h3>81% stat card</h3>
         <div class="meta"><span class="brand img">🖼 Rugiet image ad · 1080²</span><span class="date">ready to upload</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#b98cff">F · Social Proof</span><span class="tline">🎯 Men · 35–65 · warm · retargeting · <b>keep broad, let NB learn</b></span></div>
         <p class="why">One giant number + three checkmarks. Fast to read in-feed and leads with social proof — strong for retargeting warm audiences.</p>
         <a class="dl" href="../img/stat-81-percent.png" download="rugiet-stat-81-percent.png">⬇ Download PNG (1080×1080)</a>
         <div class="heads"><span class="hl">NewsBreak headline (≤90)</span><div class="cb"><code>81% Of Men Prefer This Over Their Old ED Meds — Here&#x27;s Why, {State}</code><div class="cbf"><span class="cc">67/90</span><button class="cp" data-copy="81% Of Men Prefer This Over Their Old ED Meds — Here&#x27;s Why, {State}">Copy</button></div></div></div>
@@ -127,6 +147,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★★</span><span class="verdict">UGC reply, kills price doubt</span></div>
         <h3>&#x27;Is Rugiet Ready Worth The $$?&#x27; — Comment-Reply UGC</h3>
         <div class="meta"><span class="brand fb">✅ Direct FB HD · in repo</span><span class="date">Live on FB · started 30 Jun 2026</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#ff5a3c">B · Switcher / Compare</span><span class="tline">🎯 Men · 40–65 · price-aware researchers · <b>keep broad, let NB learn</b></span></div>
         <p class="why">Creator answers a real comment — &#x27;Is RugietReady® worth the $$??&#x27; — hands-on with the product. The comment-reply format reads as authentic UGC, not an ad, and it pre-handles the price objection head-on. Native fit for NewsBreak.</p>
         <a class="dl" href="vid/rugiet-949590814796939.mp4" download="rugiet-949590814796939.mp4">⬇ Download HD .mp4 (direct)</a>
         <div class="heads"><span class="hl">NewsBreak headlines (≤90)</span><div class="cb"><code>&#x27;Is Rugiet Ready Worth The Money?&#x27; — What {City} Men Decided</code><div class="cbf"><span class="cc">60/90</span><button class="cp" data-copy="&#x27;Is Rugiet Ready Worth The Money?&#x27; — What {City} Men Decided">Copy</button></div></div><div class="cb"><code>{State} Men Asked If This 3-in-1 ED Tab Is Worth It — The Answer</code><div class="cbf"><span class="cc">64/90</span><button class="cp" data-copy="{State} Men Asked If This 3-in-1 ED Tab Is Worth It — The Answer">Copy</button></div></div></div>
@@ -136,6 +157,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★★</span><span class="verdict">Vox-pop hook, instant curiosity</span></div>
         <h3>&#x27;Biggest Turn-Off In The Bedroom?&#x27; — Street Interview</h3>
         <div class="meta"><span class="brand fb">✅ Direct FB HD · in repo</span><span class="date">Live on FB · started 30 Jun 2026</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#ffcf5c">E · Broad Curiosity</span><span class="tline">🎯 Men · 30–65 · widest cold opener · <b>keep broad, let NB learn</b></span></div>
         <p class="why">Man-on-the-street &#x27;biggest turn-off in the bedroom?&#x27; hook — the yellow caption + real reactions stop the scroll in the first second, then pivots to the 3-in-1 fix. Punchy 21s, perfect cold-feed opener.</p>
         <a class="dl" href="vid/rugiet-996222069706579.mp4" download="rugiet-996222069706579.mp4">⬇ Download HD .mp4 (direct)</a>
         <div class="heads"><span class="hl">NewsBreak headlines (≤90)</span><div class="cb"><code>The Biggest Turn-Off In The Bedroom, {City}? There&#x27;s A 15-Min Fix</code><div class="cbf"><span class="cc">65/90</span><button class="cp" data-copy="The Biggest Turn-Off In The Bedroom, {City}? There&#x27;s A 15-Min Fix">Copy</button></div></div><div class="cb"><code>{State} Women Named The #1 Bedroom Turn-Off — And The 3-in-1 Fix</code><div class="cbf"><span class="cc">64/90</span><button class="cp" data-copy="{State} Women Named The #1 Bedroom Turn-Off — And The 3-in-1 Fix">Copy</button></div></div></div>
@@ -151,6 +173,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★★</span><span class="verdict">Highest-CTR hook, approved</span></div>
         <h3>When Did You Get So BIG?</h3>
         <div class="meta"><span class="brand rug">Rugiet · official</span><span class="date">HD · in your Drive</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#ff7eb6">C · Partner POV</span><span class="tline">🎯 Men + Women · 35–60 · partner-reaction · <b>keep broad, let NB learn</b></span></div>
         <p class="why">Best-testing hook in the whole library and already cleared review. Partner-reaction curiosity that forces the click.</p>
         <a class="dl drive" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ Open Drive → Rugiet_1626169565119404_2026-06-11.mp4</a>
         <div class="heads"><span class="hl">NewsBreak headlines (≤90)</span><div class="cb"><code>{City} Wives Are Asking &#x27;When Did You Get So BIG?&#x27; — Here&#x27;s Why</code><div class="cbf"><span class="cc">63/90</span><button class="cp" data-copy="{City} Wives Are Asking &#x27;When Did You Get So BIG?&#x27; — Here&#x27;s Why">Copy</button></div></div><div class="cb"><code>The 3-in-1 ED Tab Behind Every &#x27;When Did You Get So BIG?&#x27; In {State}</code><div class="cbf"><span class="cc">68/90</span><button class="cp" data-copy="The 3-in-1 ED Tab Behind Every &#x27;When Did You Get So BIG?&#x27; In {State}">Copy</button></div></div></div>
@@ -160,6 +183,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★★</span><span class="verdict">Most relatable switcher arc</span></div>
         <h3>So the Viagra Kinda Works… But</h3>
         <div class="meta"><span class="brand rug">Rugiet · official</span><span class="date">HD · in your Drive</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#ff5a3c">B · Switcher / Compare</span><span class="tline">🎯 Men · 45–65 · Viagra switchers · <b>keep broad, let NB learn</b></span></div>
         <p class="why">Full problem→agitate→solve from a dissatisfied everyman — the most relatable script for cold NewsBreak traffic.</p>
         <a class="dl drive" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ Open Drive → Rugiet108.mp4</a>
         <div class="heads"><span class="hl">NewsBreak headlines (≤90)</span><div class="cb"><code>Viagra Kinda Works, {City}? The 3-in-1 That Actually Finishes The Job</code><div class="cbf"><span class="cc">69/90</span><button class="cp" data-copy="Viagra Kinda Works, {City}? The 3-in-1 That Actually Finishes The Job">Copy</button></div></div><div class="cb"><code>&#x27;The Viagra Kinda Works, But…&#x27; — Why {State} Men Switched To Rugiet</code><div class="cbf"><span class="cc">67/90</span><button class="cp" data-copy="&#x27;The Viagra Kinda Works, But…&#x27; — Why {State} Men Switched To Rugiet">Copy</button></div></div></div>
@@ -169,6 +193,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★★</span><span class="verdict">Highest-converting new asset</span></div>
         <h3>My Husband (44) Had Zero Stamina — Until This</h3>
         <div class="meta"><span class="brand rug">Rugiet · official</span><span class="date">HD · in your Drive</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#3fd07f">D · Stamina / Last-Longer</span><span class="tline">🎯 Women + Men · 35–55 · stamina · wife POV · <b>keep broad, let NB learn</b></span></div>
         <p class="why">Stamina pain-hook + under-$2/dose anchor + quiz CTA. Top converter of the newest batch; bridges Go Long into Ready.</p>
         <a class="dl drive" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ Open Drive → Rugiet_757709720608205_2026-06-11.mp4</a>
         <div class="heads"><span class="hl">NewsBreak headlines (≤90)</span><div class="cb"><code>My Husband (44) Had Zero Stamina — Until This {City} Wife&#x27;s Story</code><div class="cbf"><span class="cc">65/90</span><button class="cp" data-copy="My Husband (44) Had Zero Stamina — Until This {City} Wife&#x27;s Story">Copy</button></div></div><div class="cb"><code>{State} Wife: &#x27;He Had Zero Stamina At 44 — Then We Found This&#x27;</code><div class="cbf"><span class="cc">62/90</span><button class="cp" data-copy="{State} Wife: &#x27;He Had Zero Stamina At 44 — Then We Found This&#x27;">Copy</button></div></div></div>
@@ -178,6 +203,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★★</span><span class="verdict">Polished wife POV, best-seller</span></div>
         <h3>What Nobody Tells You When Your Man Starts Rugiet Ready</h3>
         <div class="meta"><span class="brand rug">Rugiet · official</span><span class="date">HD · in your Drive</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#ff7eb6">C · Partner POV</span><span class="tline">🎯 Women · 35–60 · wife POV · <b>keep broad, let NB learn</b></span></div>
         <p class="why">Clean wife-POV testimonial naming sublingual + 36-hr duration, ending on a 4.2-star best-seller card. Converts couple traffic.</p>
         <a class="dl drive" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ Open Drive → Rugiet_75.mp4</a>
         <div class="heads"><span class="hl">NewsBreak headlines (≤90)</span><div class="cb"><code>What Nobody Tells {State} Wives When Their Man Starts This ED Med</code><div class="cbf"><span class="cc">65/90</span><button class="cp" data-copy="What Nobody Tells {State} Wives When Their Man Starts This ED Med">Copy</button></div></div><div class="cb"><code>{City} Wife: &#x27;What Nobody Told Me About My Husband&#x27;s New ED Med&#x27;</code><div class="cbf"><span class="cc">64/90</span><button class="cp" data-copy="{City} Wife: &#x27;What Nobody Told Me About My Husband&#x27;s New ED Med&#x27;">Copy</button></div></div></div>
@@ -187,6 +213,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★★</span><span class="verdict">Best structure, myth-buster</span></div>
         <h3>You&#x27;ve Been Lied To About ED Meds</h3>
         <div class="meta"><span class="brand rug">Rugiet · official</span><span class="date">HD · in your Drive</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#ff5a3c">B · Switcher / Compare</span><span class="tline">🎯 Men · 40–65 · skeptics · myth-buster · <b>keep broad, let NB learn</b></span></div>
         <p class="why">Tablet-vs-generic-pill teardown built on the apomorphine angle nobody else runs. Strongest narrative arc in the set.</p>
         <a class="dl drive" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ Open Drive → Rugiet_1927813654536848_2026-06-11.mp4</a>
         <div class="heads"><span class="hl">NewsBreak headlines (≤90)</span><div class="cb"><code>You&#x27;ve Been Lied To About ED Meds — What {City} Men Just Found Out</code><div class="cbf"><span class="cc">66/90</span><button class="cp" data-copy="You&#x27;ve Been Lied To About ED Meds — What {City} Men Just Found Out">Copy</button></div></div><div class="cb"><code>The ED-Med Lie {State} Men Believed For Years — Until This 3-in-1</code><div class="cbf"><span class="cc">65/90</span><button class="cp" data-copy="The ED-Med Lie {State} Men Believed For Years — Until This 3-in-1">Copy</button></div></div></div>
@@ -196,6 +223,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★☆</span><span class="verdict">Cleanest &#x27;why different&#x27; explainer</span></div>
         <h3>3 Reasons Rugiet Is Different From Every Other ED Med</h3>
         <div class="meta"><span class="brand rug">Rugiet · official</span><span class="date">HD · in your Drive</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#ff5a3c">B · Switcher / Compare</span><span class="tline">🎯 Men · 40–65 · comparison shoppers · <b>keep broad, let NB learn</b></span></div>
         <p class="why">Product-in-hand + benefit cards + end card. The tidiest differentiation explainer — great for a colder, skeptical read.</p>
         <a class="dl drive" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ Open Drive → Rugiet26.mp4</a>
         <div class="heads"><span class="hl">NewsBreak headlines (≤90)</span><div class="cb"><code>3 Reasons This 3-in-1 Beats Every ED Med {State} Men Have Tried</code><div class="cbf"><span class="cc">63/90</span><button class="cp" data-copy="3 Reasons This 3-in-1 Beats Every ED Med {State} Men Have Tried">Copy</button></div></div><div class="cb"><code>Why {City} Men Over 40 Are Dropping Viagra For This 3-in-1 Tab</code><div class="cbf"><span class="cc">62/90</span><button class="cp" data-copy="Why {City} Men Over 40 Are Dropping Viagra For This 3-in-1 Tab">Copy</button></div></div></div>
@@ -205,6 +233,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★☆</span><span class="verdict">Direct competitor comparison</span></div>
         <h3>Apomorphine: Why Rugiet Beats Hims &amp; Ro</h3>
         <div class="meta"><span class="brand rug">Rugiet · official</span><span class="date">HD · in your Drive</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#ff5a3c">B · Switcher / Compare</span><span class="tline">🎯 Men · 30–55 · brand-aware (Hims/Ro) · <b>keep broad, let NB learn</b></span></div>
         <p class="why">Holds up Hims/Ro packets vs Rugiet — &#x27;bigger, harder, more confident,&#x27; ~15-min onset. Best for brand-aware audiences.</p>
         <a class="dl drive" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ Open Drive → Rugiet_927659910286811_2026-06-11.mp4</a>
         <div class="heads"><span class="hl">NewsBreak headlines (≤90)</span><div class="cb"><code>Why {State} Men Are Ditching Hims &amp; Ro For This 3-in-1 ED Tab</code><div class="cbf"><span class="cc">61/90</span><button class="cp" data-copy="Why {State} Men Are Ditching Hims &amp; Ro For This 3-in-1 ED Tab">Copy</button></div></div><div class="cb"><code>Hims Didn&#x27;t Work, {City}? The Brain-Plus-Body ED Formula They Missed</code><div class="cbf"><span class="cc">68/90</span><button class="cp" data-copy="Hims Didn&#x27;t Work, {City}? The Brain-Plus-Body ED Formula They Missed">Copy</button></div></div></div>
@@ -214,6 +243,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★☆</span><span class="verdict">High-trust doctor authority</span></div>
         <h3>Why You&#x27;re Not Getting Hard — A Doctor Explains</h3>
         <div class="meta"><span class="brand rug">Rugiet · official</span><span class="date">HD · in your Drive</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#4da3ff">A · Problem-Aware</span><span class="tline">🎯 Men · 45–65 · problem-aware · authority · <b>keep broad, let NB learn</b></span></div>
         <p class="why">&#x27;Dr. Tyler Hendricks, MD&#x27; walks the arousal mechanism + apomorphine brain-signal. Authority framing for skeptical readers.</p>
         <a class="dl drive" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ Open Drive → Rugiet_965770832956273_2026-06-11.mp4</a>
         <div class="heads"><span class="hl">NewsBreak headlines (≤90)</span><div class="cb"><code>A Doctor Explains Why {City} Men Can&#x27;t Get Hard — And The 15-Min Fix</code><div class="cbf"><span class="cc">68/90</span><button class="cp" data-copy="A Doctor Explains Why {City} Men Can&#x27;t Get Hard — And The 15-Min Fix">Copy</button></div></div><div class="cb"><code>The Real Reason {State} Men Can&#x27;t Stay Hard, Explained By A Doctor</code><div class="cbf"><span class="cc">66/90</span><button class="cp" data-copy="The Real Reason {State} Men Can&#x27;t Stay Hard, Explained By A Doctor">Copy</button></div></div></div>
@@ -223,6 +253,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★☆</span><span class="verdict">55+ targeted, names formula</span></div>
         <h3>Most Guys 55+ Don&#x27;t Know THIS About Their ED Meds</h3>
         <div class="meta"><span class="brand rug">Rugiet · official</span><span class="date">HD · in your Drive</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#4da3ff">A · Problem-Aware</span><span class="tline">🎯 Men · 55+ · older segment · <b>keep broad, let NB learn</b></span></div>
         <p class="why">The one pure-Ready video naming all 3 RD-37 ingredients, aimed at 55+. Clean fit for NewsBreak&#x27;s older skew.</p>
         <a class="dl drive" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ Open Drive → Rugiet_7.mp4</a>
         <div class="heads"><span class="hl">NewsBreak headlines (≤90)</span><div class="cb"><code>Most {State} Men Over 55 Don&#x27;t Know THIS About Their ED Meds</code><div class="cbf"><span class="cc">60/90</span><button class="cp" data-copy="Most {State} Men Over 55 Don&#x27;t Know THIS About Their ED Meds">Copy</button></div></div><div class="cb"><code>{City} Men Over 55: The 3-in-1 ED Tab Your Doctor Didn&#x27;t Mention</code><div class="cbf"><span class="cc">64/90</span><button class="cp" data-copy="{City} Men Over 55: The 3-in-1 ED Tab Your Doctor Didn&#x27;t Mention">Copy</button></div></div></div>
@@ -232,6 +263,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;colo
         <div class="toprow"><span class="rate">★★★★☆</span><span class="verdict">Clean stamina UGC, no flags</span></div>
         <h3>Finishing Too Soon? Watch This</h3>
         <div class="meta"><span class="brand rug">Rugiet · official</span><span class="date">HD · in your Drive</span></div>
+        <div class="tgt"><span class="cchip" style="--cc:#3fd07f">D · Stamina / Last-Longer</span><span class="tline">🎯 Men · 25–55 · stamina · PE angle · <b>keep broad, let NB learn</b></span></div>
         <p class="why">Car-selfie UGC + site walkthrough with zero policy flags. Safe, relatable stamina lead for broad delivery.</p>
         <a class="dl drive" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ Open Drive → Rugiet_1239032228087231_2026-06-11.mp4</a>
         <div class="heads"><span class="hl">NewsBreak headlines (≤90)</span><div class="cb"><code>Finishing Too Soon, {City}? The Sublingual Fix Doctors Recommend</code><div class="cbf"><span class="cc">64/90</span><button class="cp" data-copy="Finishing Too Soon, {City}? The Sublingual Fix Doctors Recommend">Copy</button></div></div><div class="cb"><code>The Stamina Fix {State} Men Are Talking About — Works In ~15 Min</code><div class="cbf"><span class="cc">64/90</span><button class="cp" data-copy="The Stamina Fix {State} Men Are Talking About — Works In ~15 Min">Copy</button></div></div></div>
