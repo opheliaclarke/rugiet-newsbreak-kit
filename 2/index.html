@@ -35,7 +35,7 @@ section{padding:26px 0 6px}.sh{display:flex;align-items:baseline;gap:12px;margin
 .ab.on{background:rgba(255,90,60,.14);border-color:rgba(255,90,60,.5);color:#ffb9ab;font-weight:700}
 .adlabel{font-size:11px;color:var(--mut);margin-bottom:8px}.adlabel .i{color:var(--gold)}
 .media{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line);border-radius:9px;overflow:hidden}
-.mi,.mv{position:relative;background:#000;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.mi,.mv{position:relative;background:#000;aspect-ratio:9/16;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .mi img{width:100%;height:100%;object-fit:cover}.mv video{width:100%;height:100%;object-fit:contain;background:#000}
 .mv.vthumb{flex-direction:column;gap:8px;background:linear-gradient(135deg,#1c2331,#0f1420)}
 .mv .play{width:40px;height:40px;border-radius:50%;background:var(--acc);color:#fff;display:flex;align-items:center;justify-content:center;font-size:16px;padding-left:2px}
@@ -49,6 +49,14 @@ section{padding:26px 0 6px}.sh{display:flex;align-items:baseline;gap:12px;margin
 .cbf{display:flex;align-items:center;justify-content:space-between}.cc{font-size:11px;color:var(--grn)}.cc.over{color:var(--acc)}
 .cp{background:var(--acc);color:#fff;border:0;border-radius:7px;padding:5px 13px;font-size:12px;font-weight:700;cursor:pointer}.cp.done{background:var(--grn)}
 .tok{background:var(--panel2);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-family:ui-monospace,monospace;font-size:12px;color:var(--acc2)}
+.specgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:12px}
+.spec{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.spec .st{font-weight:800;font-size:13px;margin-bottom:4px;color:var(--txt)}
+.spec .sv{font-size:12.5px;color:var(--mut)}.spec .sv b{color:var(--txt)}
+.spec .dl{display:inline-block;margin-top:5px;background:var(--panel2);border:1px solid var(--line);border-radius:7px;padding:5px 10px;font-size:12px;font-weight:600;color:var(--gold)}
+.spec .cp{margin-left:6px;padding:3px 10px}
+.logochip{display:inline-flex;align-items:center;gap:8px;vertical-align:middle}
+.logochip img{width:40px;height:40px;border-radius:9px}
 footer{border-top:1px solid var(--line);margin-top:34px;padding:24px 0 50px;color:var(--mut);font-size:12.5px}
 @media(max-width:720px){.setgrid,.sched2{grid-template-columns:1fr}header h1{font-size:23px}}
 </style></head><body>
@@ -97,6 +105,20 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:24px 0 50px;colo
     </div>
   </div>
   <div class="note"><b>Net effect:</b> live ~9 hours a day, all inside the national evening, on a Conversions objective — so $150 lands on people in a buying frame of mind, not sprayed across a full day of daytime scrollers. <b>No timezone math on your end — just set 3 PM–12 AM in your PST account.</b></div>
+</section>
+
+<section id="specs">
+  <div class="sh"><h2>📎 NewsBreak upload specs — apply to every ad</h2><span class="ct">straight from the ad builder</span></div>
+  <div class="specgrid">
+    <div class="spec"><div class="st">🖼 Image ratio — FIXED</div><div class="sv"><b>Vertical 9:16 · 1080×1920</b> (max 5MB). The images below are now built to this — the old 1:1 squares were getting blur-padded top &amp; bottom. <b>Re-download the new vertical ones.</b></div></div>
+    <div class="spec"><div class="st">🎬 Video</div><div class="sv">Vertical 9:16 — your clips are 360×640 native, good as-is.</div></div>
+    <div class="spec"><div class="st">🖼 Poster image (video ads)</div><div class="sv">The thumbnail shown before play. Use the ad's paired <b>image (9:16)</b> below, or a strong frame from the video — same 1080×1920.</div></div>
+    <div class="spec"><div class="st">🏷 Logo — 40×40</div><div class="sv">Use the Rugiet mark: <span class="logochip"><img src="../img/rugiet-logo.png" alt="logo"></span> <a class="dl" href="../img/rugiet-logo.png" download="rugiet-logo.png">⬇ rugiet-logo.png</a> (swap the brand's official logo if you get it). Max 5MB.</div></div>
+    <div class="spec"><div class="st">🏢 Brand name — ≤25 chars</div><div class="sv"><b>Rugiet Ready</b> (12 chars)<button class="cp" data-copy="Rugiet Ready">Copy</button></div></div>
+    <div class="spec"><div class="st">🔘 Text on button (CTA)</div><div class="sv">Pick <b>"Learn More"</b> from the dropdown — safest for a health offer and highest CTR on curiosity ads. Action-led alternatives if you prefer: <b>Get Started</b> or <b>Get Offer</b>.</div></div>
+    <div class="spec"><div class="st">📝 Description</div><div class="sv"><b>Max 90 chars ✓</b> — all 6 below fit (67–81). NB shows the <b>title only</b> on fullscreen/interstitial placements, so the headline carries it.</div></div>
+    <div class="spec"><div class="st">🔗 Landing page</div><div class="sv">Your compliant pre-lander / quiz with the conversion pixel on it. NB reviews the LP as hard as the ad.</div></div>
+  </div>
 </section>
 
 <section>
@@ -190,7 +212,7 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:24px 0 50px;colo
 
 <section>
   <div class="sh"><h2>How to launch</h2></div>
-  <p class="lead"><b>0.</b> Fire the conversion pixel first (test one conversion). <b>1.</b> Create <b>1 campaign</b> — objective <b>Conversions</b>, <b>CBO on</b>, <b>$150/day</b>, keep the account on <b>PST</b>, schedule <b>3 PM–12 AM PST, all days</b>. <b>2.</b> Add <b>6 ad sets</b> with the targeting chips shown (Location USA · Gender · Age buckets · Language English). <b>3.</b> Drop <b>1 ad</b> in each: download that card's <b>image</b> + <b>video</b>, paste the <b>headline</b> as the title and the <b>description</b> as the body; insert <span class="tok">{City}</span>/<span class="tok">{State}</span> via <b>+ Add dynamic content</b>. Let it learn 3–5 days before judging; only pause an ad set after real spend. Claims stick to Rugiet's real facts — 3-in-1 sublingual, ~15-min onset, up to 36 hrs, 81% prefer, doctor-prescribed. No fabricated FDA/cure claims (NB's Rx review kills those).</p>
+  <p class="lead"><b>0.</b> Fire the conversion pixel first (test one conversion). <b>1.</b> Create <b>1 campaign</b> — objective <b>Conversions</b>, <b>CBO on</b>, <b>$150/day</b>, keep the account on <b>PST</b>, schedule <b>3 PM–12 AM PST, all days</b>. <b>2.</b> Add <b>6 ad sets</b> with the targeting chips shown (Location USA · Gender · Age buckets · Language English). <b>3.</b> Drop <b>1 ad</b> in each: upload that card's <b>video</b> + its <b>image (9:16)</b> as the poster, paste the <b>headline</b> as the title and the <b>description</b> as the body (insert <span class="tok">{City}</span>/<span class="tok">{State}</span> via <b>+ Add dynamic content</b>), then set <b>CTA = "Learn More"</b>, <b>Brand name = "Rugiet Ready"</b>, and upload the <b>40×40 logo</b> (specs section above). Let it learn 3–5 days before judging; only pause an ad set after real spend. Claims stick to Rugiet's real facts — 3-in-1 sublingual, ~15-min onset, up to 36 hrs, 81% prefer, doctor-prescribed. No fabricated FDA/cure claims (NB's Rx review kills those).</p>
 </section>
 
 </div>
