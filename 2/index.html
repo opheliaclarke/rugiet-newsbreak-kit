@@ -69,15 +69,18 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:24px 0 50px;colo
   <div class="sh"><h2>📐 Campaign structure</h2></div>
   <div class="map">
     <div class="l1">📣 1 Campaign — objective Conversions · <span class="b">CBO ON</span> · budget <span class="b">$150/day</span></div>
-    <div class="l2">↳ 🎯 Ad set 1 — <b>Older men · price &amp; value</b> (Male · 45-64, 65+) → 1 ad</div><div class="l2">↳ 🎯 Ad set 2 — <b>Older men · doctor authority</b> (Male · 45-64, 65+) → 1 ad</div><div class="l2">↳ 🎯 Ad set 3 — <b>Broad men · curiosity hook</b> (Male · 31-44, 45-64) → 1 ad</div><div class="l2">↳ 🎯 Ad set 4 — <b>Men · Viagra switchers</b> (Male · 45-64, 65+) → 1 ad</div><div class="l2">↳ 🎯 Ad set 5 — <b>Women · wife testimonial</b> (Female · 31-44, 45-64) → 1 ad</div><div class="l2">↳ 🎯 Ad set 6 — <b>Women · partner reaction</b> (Female · 31-44, 45-64) → 1 ad</div>
+    <div class="l2">↳ 🎯 Ad set 1 — <b>Core men · 45-64</b> (Male · 45-64) → 1 ad</div><div class="l2">↳ 🎯 Ad set 2 — <b>Oldest men · 65+</b> (Male · 65+) → 1 ad</div><div class="l2">↳ 🎯 Ad set 3 — <b>Younger men · 31-44</b> (Male · 31-44) → 1 ad</div><div class="l2">↳ 🎯 Ad set 4 — <b>Wives · 45-64</b> (Female · 45-64) → 1 ad</div><div class="l2">↳ 🎯 Ad set 5 — <b>Younger wives · 31-44</b> (Female · 31-44) → 1 ad</div><div class="l2">↳ 🎯 Ad set 6 — <b>Broad discovery · everyone 45-64</b> (Unlimited · 45-64) → 1 ad</div>
   </div>
-  <div class="note"><b>What CBO does:</b> you set the <b>$150/day on the campaign only</b> — never per ad set. NewsBreak spreads it across the 6 ad sets and automatically shifts money to whichever ones convert. The <b>~$25/day*</b> on each card is just the even starting split ($150 ÷ 6) — CBO won't hold it there, it'll feed the winners. Don't set budgets on the ad sets themselves.</div>
+  <div class="note"><b>What CBO does:</b> you set the <b>$150/day on the campaign only</b> — never per ad set. NewsBreak spreads it across the 6 ad sets and automatically shifts money to whichever ones convert. The <b>~$25/day*</b> on each card is just the even starting split ($150 ÷ 6) — CBO won't hold it there, it'll quickly funnel spend into the 2-3 sets that work and starve the rest. That's the point: launch all 6 to test, let CBO pick winners. <b>Honest note:</b> $150 across 6 sets is thin for optimising to <i>purchases</i> — that's exactly why you optimise a cheaper mid-funnel event first (see checklist below), so each set gets enough conversions to actually learn.</div>
 </section>
 
 <section>
   <div class="sh"><h2>🎯 How this only spends on real buyers</h2></div>
-  <div class="note big-ok"><b>Two levers do it — not "show to everyone."</b> <b>(1) WHO</b> — set the objective to <b>Conversions</b> (never Traffic/Awareness). NewsBreak's algorithm then only serves people it predicts will <b>buy</b>, using your conversion pixel — inside your targeting, it skips the tyre-kickers. <b>(2) WHEN</b> — day-part to the hours ED actually sells (below). Broad age buckets just give the algo room to find the pocket; the pixel keeps it honest.</div>
-  <div class="note"><b>⚠️ Do this first or the whole thing is blind:</b> fire your <b>NewsBreak conversion pixel</b> (or an Everflow → NewsBreak postback) on the Rugiet purchase/qualified-lead event. Without it, CBO can't tell a buyer from a bouncer and will waste the $150. Confirm a test conversion registers <i>before</i> you scale spend.</div>
+  <div class="note big-ok"><b>Two levers do it — not "show to everyone."</b> <b>(1) WHO</b> — set the objective to <b>Conversions</b> (never Traffic/Awareness). NewsBreak's algorithm then only serves people it predicts will convert, inside your targeting — it skips the tyre-kickers. <b>(2) WHEN</b> — day-part to the hours ED actually sells (below). Distinct audiences + broad-ish buckets give the algo room; the pixel keeps it honest.</div>
+  <div class="note"><b>⚠️ Pre-launch checklist — do these or the $150 is blind:</b>
+    <br>• <b>Tracking:</b> You're an affiliate, so you can't drop NewsBreak's pixel on Rugiet's checkout. Use a <b>pre-lander you control</b> (fire the NB pixel on it) or an <b>Everflow → NewsBreak S2S postback</b>. Pick the event to optimise: a <b>purchase</b> is ideal but low-volume — at $150/day across 6 sets you likely won't hit enough purchases to train, so optimise a <b>mid-funnel event (quiz-start / qualified lead)</b> first, then move to purchase once volume builds. Confirm a test conversion registers <i>before</i> scaling.
+    <br>• <b>Geo:</b> Rugiet is compounded telehealth and <b>isn't prescribable in every U.S. state</b>. Targeting bare "USA" burns budget on clicks that can't convert. Confirm the serviceable states with the offer and <b>exclude the rest</b> (Location → Customize).
+    <br>• <b>Landing page:</b> every ad says "quiz / see the price / prescribed online" — make sure the click lands on a compliant pre-lander/quiz, not a raw offer page. NB's Rx review judges the LP as hard as the ad.</div>
 </section>
 
 <section>
@@ -107,12 +110,12 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:24px 0 50px;colo
 <section>
   <div class="sh"><h2>🎯 The 6 ad sets</h2><span class="ct">each = its own audience + 1 ad (image + video)</span></div>
   <div class="setgrid"><article class="adset" style="--cc:#ff5a3c">
-      <div class="ash"><span class="asid">Ad set 1</span><h3>Older men · price &amp; value</h3><span class="asbudget">~$25/day*</span></div>
-      <p class="aswhy">Core ED buyers weighing cost — the comment-reply UGC pre-handles the &#x27;is it worth it?&#x27; objection.</p>
+      <div class="ash"><span class="asid">Ad set 1</span><h3>Core men · 45-64</h3><span class="asbudget">~$25/day*</span></div>
+      <p class="aswhy">The heart of the ED buyer base — men 45-64 comparing options and weighing cost. Highest expected volume.</p>
       <div class="tgtbox">
         <div class="tgrow"><span class="tk">Location</span><span class="ab on">USA</span></div>
         <div class="tgrow"><span class="tk">Gender</span><span class="ab ">Unlimited</span><span class="ab on">Male</span><span class="ab ">Female</span></div>
-        <div class="tgrow"><span class="tk">Age</span><span class="ab ">18-30</span><span class="ab ">31-44</span><span class="ab on">45-64</span><span class="ab on">65+</span></div>
+        <div class="tgrow"><span class="tk">Age</span><span class="ab ">18-30</span><span class="ab ">31-44</span><span class="ab on">45-64</span><span class="ab ">65+</span></div>
         <div class="tgrow"><span class="tk">Language</span><span class="ab on">English</span></div>
       </div>
       <div class="adlabel">The 1 ad · 🖼 Rugiet vs generic comparison table + 🎬 Comment-reply UGC: &#x27;Is Rugiet Ready worth the $$?&#x27;</div>
@@ -121,75 +124,75 @@ footer{border-top:1px solid var(--line);margin-top:34px;padding:24px 0 50px;colo
         <div class="cl">Headline — ad title (≤90)</div><div class="cb"><code>&#x27;Is Rugiet Ready Worth The Money?&#x27; — What {City} Men Decided</code><div class="cbf"><span class="cc">60/90</span><button class="cp" data-copy="&#x27;Is Rugiet Ready Worth The Money?&#x27; — What {City} Men Decided">Copy</button></div></div>
         <div class="cl">Description — ad body (≤90)</div><div class="cb"><code>Costs more because it does more — 3 actives, ~15-min onset, up to 36 hrs.</code><div class="cbf"><span class="cc">73/90</span><button class="cp" data-copy="Costs more because it does more — 3 actives, ~15-min onset, up to 36 hrs.">Copy</button></div></div>
       </div></article><article class="adset" style="--cc:#ff8a4c">
-      <div class="ash"><span class="asid">Ad set 2</span><h3>Older men · doctor authority</h3><span class="asbudget">~$25/day*</span></div>
-      <p class="aswhy">Problem-aware older men who trust a doctor&#x27;s explanation over a sales pitch.</p>
+      <div class="ash"><span class="asid">Ad set 2</span><h3>Oldest men · 65+</h3><span class="asbudget">~$25/day*</span></div>
+      <p class="aswhy">65+ men, highest ED rate of all — they trust a doctor&#x27;s explanation over a pitch. Authority creative.</p>
       <div class="tgtbox">
         <div class="tgrow"><span class="tk">Location</span><span class="ab on">USA</span></div>
         <div class="tgrow"><span class="tk">Gender</span><span class="ab ">Unlimited</span><span class="ab on">Male</span><span class="ab ">Female</span></div>
-        <div class="tgrow"><span class="tk">Age</span><span class="ab ">18-30</span><span class="ab ">31-44</span><span class="ab on">45-64</span><span class="ab on">65+</span></div>
+        <div class="tgrow"><span class="tk">Age</span><span class="ab ">18-30</span><span class="ab ">31-44</span><span class="ab ">45-64</span><span class="ab on">65+</span></div>
         <div class="tgrow"><span class="tk">Language</span><span class="ab on">English</span></div>
       </div>
-      <div class="adlabel">The 1 ad · 🖼 Google search-intent mockup (dark) + 🎬 Why You&#x27;re Not Getting Hard — A Doctor Explains</div>
+      <div class="adlabel">The 1 ad · 🖼 Google search-intent mockup (dark) + 🎬 Why ED Happens — A Doctor Explains (authority)</div>
       <div class="media"><div class="mi"><img loading="lazy" src="../img/autocomplete-dark.png" alt="Google search-intent mockup (dark)"><a class="mdl" href="../img/autocomplete-dark.png" download="rugiet-autocomplete-dark.png">⬇ image (1080²)</a></div><div class="mv vthumb"><span class="play">▶</span><span class="vfile">Rugiet_965770832956273_2026-06-11.mp4</span><a class="mdl" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ video (Drive HD)</a></div></div>
       <div class="copy">
-        <div class="cl">Headline — ad title (≤90)</div><div class="cb"><code>A Doctor Explains Why {City} Men Can&#x27;t Get Hard — And The 15-Min Fix</code><div class="cbf"><span class="cc">68/90</span><button class="cp" data-copy="A Doctor Explains Why {City} Men Can&#x27;t Get Hard — And The 15-Min Fix">Copy</button></div></div>
-        <div class="cl">Description — ad body (≤90)</div><div class="cb"><code>A doctor explains the real cause — and the 3-in-1 that fixes it in ~15 min.</code><div class="cbf"><span class="cc">75/90</span><button class="cp" data-copy="A doctor explains the real cause — and the 3-in-1 that fixes it in ~15 min.">Copy</button></div></div>
+        <div class="cl">Headline — ad title (≤90)</div><div class="cb"><code>A Doctor Explains The Real Cause Of ED In {City} Men Over 60</code><div class="cbf"><span class="cc">60/90</span><button class="cp" data-copy="A Doctor Explains The Real Cause Of ED In {City} Men Over 60">Copy</button></div></div>
+        <div class="cl">Description — ad body (≤90)</div><div class="cb"><code>It&#x27;s not just blood flow — a doctor breaks down the 3-in-1 that works in ~15 min.</code><div class="cbf"><span class="cc">81/90</span><button class="cp" data-copy="It&#x27;s not just blood flow — a doctor breaks down the 3-in-1 that works in ~15 min.">Copy</button></div></div>
       </div></article><article class="adset" style="--cc:#4da3ff">
-      <div class="ash"><span class="asid">Ad set 3</span><h3>Broad men · curiosity hook</h3><span class="asbudget">~$25/day*</span></div>
-      <p class="aswhy">Widest, slightly younger net — the street-interview hook qualifies people on its own.</p>
+      <div class="ash"><span class="asid">Ad set 3</span><h3>Younger men · 31-44</h3><span class="asbudget">~$25/day*</span></div>
+      <p class="aswhy">Younger men (performance anxiety, early ED) — the street-interview hook qualifies them without feeling clinical.</p>
       <div class="tgtbox">
         <div class="tgrow"><span class="tk">Location</span><span class="ab on">USA</span></div>
         <div class="tgrow"><span class="tk">Gender</span><span class="ab ">Unlimited</span><span class="ab on">Male</span><span class="ab ">Female</span></div>
-        <div class="tgrow"><span class="tk">Age</span><span class="ab ">18-30</span><span class="ab on">31-44</span><span class="ab on">45-64</span><span class="ab ">65+</span></div>
+        <div class="tgrow"><span class="tk">Age</span><span class="ab ">18-30</span><span class="ab on">31-44</span><span class="ab ">45-64</span><span class="ab ">65+</span></div>
         <div class="tgrow"><span class="tk">Language</span><span class="ab on">English</span></div>
       </div>
       <div class="adlabel">The 1 ad · 🖼 &#x27;Biggest turn-off&#x27; hook card + 🎬 Street-interview: &#x27;Biggest turn-off in the bedroom?&#x27;</div>
       <div class="media"><div class="mi"><img loading="lazy" src="../img/bedroom-hook.png" alt="&#x27;Biggest turn-off&#x27; hook card"><a class="mdl" href="../img/bedroom-hook.png" download="rugiet-bedroom-hook.png">⬇ image (1080²)</a></div><div class="mv"><video controls preload="metadata" src="vid/rugiet-996222069706579.mp4"></video><span class="dur">21s</span><a class="mdl" href="vid/rugiet-996222069706579.mp4" download>⬇ video (HD .mp4)</a></div></div>
       <div class="copy">
-        <div class="cl">Headline — ad title (≤90)</div><div class="cb"><code>The Biggest Turn-Off In The Bedroom, {City}? There&#x27;s A 15-Min Fix</code><div class="cbf"><span class="cc">65/90</span><button class="cp" data-copy="The Biggest Turn-Off In The Bedroom, {City}? There&#x27;s A 15-Min Fix">Copy</button></div></div>
-        <div class="cl">Description — ad body (≤90)</div><div class="cb"><code>The #1 mood-killer is fixable — the 3-in-1 works in ~15 min. Take the quiz.</code><div class="cbf"><span class="cc">75/90</span><button class="cp" data-copy="The #1 mood-killer is fixable — the 3-in-1 works in ~15 min. Take the quiz.">Copy</button></div></div>
-      </div></article><article class="adset" style="--cc:#3fd07f">
-      <div class="ash"><span class="asid">Ad set 4</span><h3>Men · Viagra switchers</h3><span class="asbudget">~$25/day*</span></div>
-      <p class="aswhy">Men already on a generic that &#x27;kinda works&#x27; — sell the upgrade, not the category.</p>
-      <div class="tgtbox">
-        <div class="tgrow"><span class="tk">Location</span><span class="ab on">USA</span></div>
-        <div class="tgrow"><span class="tk">Gender</span><span class="ab ">Unlimited</span><span class="ab on">Male</span><span class="ab ">Female</span></div>
-        <div class="tgrow"><span class="tk">Age</span><span class="ab ">18-30</span><span class="ab ">31-44</span><span class="ab on">45-64</span><span class="ab on">65+</span></div>
-        <div class="tgrow"><span class="tk">Language</span><span class="ab on">English</span></div>
-      </div>
-      <div class="adlabel">The 1 ad · 🖼 81% social-proof stat card + 🎬 So the Viagra Kinda Works… But</div>
-      <div class="media"><div class="mi"><img loading="lazy" src="../img/stat-81-percent.png" alt="81% social-proof stat card"><a class="mdl" href="../img/stat-81-percent.png" download="rugiet-stat-81-percent.png">⬇ image (1080²)</a></div><div class="mv vthumb"><span class="play">▶</span><span class="vfile">Rugiet108.mp4</span><a class="mdl" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ video (Drive HD)</a></div></div>
-      <div class="copy">
-        <div class="cl">Headline — ad title (≤90)</div><div class="cb"><code>Viagra Kinda Works, {City}? The 3-in-1 That Actually Finishes The Job</code><div class="cbf"><span class="cc">69/90</span><button class="cp" data-copy="Viagra Kinda Works, {City}? The 3-in-1 That Actually Finishes The Job">Copy</button></div></div>
-        <div class="cl">Description — ad body (≤90)</div><div class="cb"><code>Generic only half-works? You&#x27;re missing 2 actives. The 3-in-1 works in ~15 min.</code><div class="cbf"><span class="cc">79/90</span><button class="cp" data-copy="Generic only half-works? You&#x27;re missing 2 actives. The 3-in-1 works in ~15 min.">Copy</button></div></div>
+        <div class="cl">Headline — ad title (≤90)</div><div class="cb"><code>The Biggest Turn-Off In The Bedroom, {City}? Here&#x27;s The 15-Min Answer</code><div class="cbf"><span class="cc">69/90</span><button class="cp" data-copy="The Biggest Turn-Off In The Bedroom, {City}? Here&#x27;s The 15-Min Answer">Copy</button></div></div>
+        <div class="cl">Description — ad body (≤90)</div><div class="cb"><code>The #1 bedroom complaint, handled — the 3-in-1 works in ~15 min. Take the quiz.</code><div class="cbf"><span class="cc">79/90</span><button class="cp" data-copy="The #1 bedroom complaint, handled — the 3-in-1 works in ~15 min. Take the quiz.">Copy</button></div></div>
       </div></article><article class="adset" style="--cc:#ff7eb6">
-      <div class="ash"><span class="asid">Ad set 5</span><h3>Women · wife testimonial</h3><span class="asbudget">~$25/day*</span></div>
-      <p class="aswhy">Wives who research for their man — the &#x27;my husband&#x27; story + price anchor converts here.</p>
+      <div class="ash"><span class="asid">Ad set 4</span><h3>Wives · 45-64</h3><span class="asbudget">~$25/day*</span></div>
+      <p class="aswhy">Wives of older men who research and nudge — the calm &#x27;what nobody tells you&#x27; testimonial lands here.</p>
       <div class="tgtbox">
         <div class="tgrow"><span class="tk">Location</span><span class="ab on">USA</span></div>
         <div class="tgrow"><span class="tk">Gender</span><span class="ab ">Unlimited</span><span class="ab ">Male</span><span class="ab on">Female</span></div>
-        <div class="tgrow"><span class="tk">Age</span><span class="ab ">18-30</span><span class="ab on">31-44</span><span class="ab on">45-64</span><span class="ab ">65+</span></div>
+        <div class="tgrow"><span class="tk">Age</span><span class="ab ">18-30</span><span class="ab ">31-44</span><span class="ab on">45-64</span><span class="ab ">65+</span></div>
+        <div class="tgrow"><span class="tk">Language</span><span class="ab on">English</span></div>
+      </div>
+      <div class="adlabel">The 1 ad · 🖼 &#x27;Biggest turn-off&#x27; hook card + 🎬 What Nobody Tells You When Your Man Starts Rugiet (wife POV)</div>
+      <div class="media"><div class="mi"><img loading="lazy" src="../img/bedroom-hook.png" alt="&#x27;Biggest turn-off&#x27; hook card"><a class="mdl" href="../img/bedroom-hook.png" download="rugiet-bedroom-hook.png">⬇ image (1080²)</a></div><div class="mv vthumb"><span class="play">▶</span><span class="vfile">Rugiet_75.mp4</span><a class="mdl" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ video (Drive HD)</a></div></div>
+      <div class="copy">
+        <div class="cl">Headline — ad title (≤90)</div><div class="cb"><code>What Nobody Tells {State} Wives When Their Man Starts This ED Med</code><div class="cbf"><span class="cc">65/90</span><button class="cp" data-copy="What Nobody Tells {State} Wives When Their Man Starts This ED Med">Copy</button></div></div>
+        <div class="cl">Description — ad body (≤90)</div><div class="cb"><code>Sublingual, ~15-min onset, up to 36 hrs — and 81% of men prefer it.</code><div class="cbf"><span class="cc">67/90</span><button class="cp" data-copy="Sublingual, ~15-min onset, up to 36 hrs — and 81% of men prefer it.">Copy</button></div></div>
+      </div></article><article class="adset" style="--cc:#c471ed">
+      <div class="ash"><span class="asid">Ad set 5</span><h3>Younger wives · 31-44</h3><span class="asbudget">~$25/day*</span></div>
+      <p class="aswhy">Younger wives whose partner has early ED / stamina issues — the &#x27;my husband (44)&#x27; story + price anchor.</p>
+      <div class="tgtbox">
+        <div class="tgrow"><span class="tk">Location</span><span class="ab on">USA</span></div>
+        <div class="tgrow"><span class="tk">Gender</span><span class="ab ">Unlimited</span><span class="ab ">Male</span><span class="ab on">Female</span></div>
+        <div class="tgrow"><span class="tk">Age</span><span class="ab ">18-30</span><span class="ab on">31-44</span><span class="ab ">45-64</span><span class="ab ">65+</span></div>
         <div class="tgrow"><span class="tk">Language</span><span class="ab on">English</span></div>
       </div>
       <div class="adlabel">The 1 ad · 🖼 81% social-proof stat card + 🎬 My Husband (44) Had Zero Stamina — Until This</div>
       <div class="media"><div class="mi"><img loading="lazy" src="../img/stat-81-percent.png" alt="81% social-proof stat card"><a class="mdl" href="../img/stat-81-percent.png" download="rugiet-stat-81-percent.png">⬇ image (1080²)</a></div><div class="mv vthumb"><span class="play">▶</span><span class="vfile">Rugiet_757709720608205_2026-06-11.mp4</span><a class="mdl" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ video (Drive HD)</a></div></div>
       <div class="copy">
         <div class="cl">Headline — ad title (≤90)</div><div class="cb"><code>My Husband (44) Had Zero Stamina — Until This {City} Wife&#x27;s Story</code><div class="cbf"><span class="cc">65/90</span><button class="cp" data-copy="My Husband (44) Had Zero Stamina — Until This {City} Wife&#x27;s Story">Copy</button></div></div>
-        <div class="cl">Description — ad body (≤90)</div><div class="cb"><code>Under $2/dose, works in ~15 min, lasts up to 36 hrs. See if he qualifies.</code><div class="cbf"><span class="cc">73/90</span><button class="cp" data-copy="Under $2/dose, works in ~15 min, lasts up to 36 hrs. See if he qualifies.">Copy</button></div></div>
-      </div></article><article class="adset" style="--cc:#b98cff">
-      <div class="ash"><span class="asid">Ad set 6</span><h3>Women · partner reaction</h3><span class="asbudget">~$25/day*</span></div>
-      <p class="aswhy">Partners reacting to the change — playful curiosity hook aimed at the woman who shares it.</p>
+        <div class="cl">Description — ad body (≤90)</div><div class="cb"><code>Works in ~15 min, lasts up to 36 hrs — 81% of men prefer it. See if he qualifies.</code><div class="cbf"><span class="cc">81/90</span><button class="cp" data-copy="Works in ~15 min, lasts up to 36 hrs — 81% of men prefer it. See if he qualifies.">Copy</button></div></div>
+      </div></article><article class="adset" style="--cc:#3fd07f">
+      <div class="ash"><span class="asid">Ad set 6</span><h3>Broad discovery · everyone 45-64</h3><span class="asbudget">~$25/day*</span></div>
+      <p class="aswhy">The open &#x27;let CBO find anyone&#x27; set — no gender filter, core age. Often the top performer because the algo isn&#x27;t boxed in. Your control set.</p>
       <div class="tgtbox">
         <div class="tgrow"><span class="tk">Location</span><span class="ab on">USA</span></div>
-        <div class="tgrow"><span class="tk">Gender</span><span class="ab ">Unlimited</span><span class="ab ">Male</span><span class="ab on">Female</span></div>
-        <div class="tgrow"><span class="tk">Age</span><span class="ab ">18-30</span><span class="ab on">31-44</span><span class="ab on">45-64</span><span class="ab ">65+</span></div>
+        <div class="tgrow"><span class="tk">Gender</span><span class="ab on">Unlimited</span><span class="ab ">Male</span><span class="ab ">Female</span></div>
+        <div class="tgrow"><span class="tk">Age</span><span class="ab ">18-30</span><span class="ab ">31-44</span><span class="ab on">45-64</span><span class="ab ">65+</span></div>
         <div class="tgrow"><span class="tk">Language</span><span class="ab on">English</span></div>
       </div>
-      <div class="adlabel">The 1 ad · 🖼 &#x27;Biggest turn-off&#x27; hook card + 🎬 When Did You Get So BIG?</div>
-      <div class="media"><div class="mi"><img loading="lazy" src="../img/bedroom-hook.png" alt="&#x27;Biggest turn-off&#x27; hook card"><a class="mdl" href="../img/bedroom-hook.png" download="rugiet-bedroom-hook.png">⬇ image (1080²)</a></div><div class="mv vthumb"><span class="play">▶</span><span class="vfile">Rugiet_1626169565119404_2026-06-11.mp4</span><a class="mdl" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ video (Drive HD)</a></div></div>
+      <div class="adlabel">The 1 ad · 🖼 Google search-intent mockup (light) + 🎬 You&#x27;ve Been Lied To About ED Meds (myth-buster)</div>
+      <div class="media"><div class="mi"><img loading="lazy" src="../img/autocomplete-light.png" alt="Google search-intent mockup (light)"><a class="mdl" href="../img/autocomplete-light.png" download="rugiet-autocomplete-light.png">⬇ image (1080²)</a></div><div class="mv vthumb"><span class="play">▶</span><span class="vfile">Rugiet_1927813654536848_2026-06-11.mp4</span><a class="mdl" href="https://drive.google.com/drive/folders/1QuaKBao0v15Hq5IwiUPTPiFK6jN2jx7z" target="_blank" rel="noopener">⬇ video (Drive HD)</a></div></div>
       <div class="copy">
-        <div class="cl">Headline — ad title (≤90)</div><div class="cb"><code>{City} Wives Are Asking &#x27;When Did You Get So BIG?&#x27; — Here&#x27;s Why</code><div class="cbf"><span class="cc">63/90</span><button class="cp" data-copy="{City} Wives Are Asking &#x27;When Did You Get So BIG?&#x27; — Here&#x27;s Why">Copy</button></div></div>
-        <div class="cl">Description — ad body (≤90)</div><div class="cb"><code>The 3-in-1 behind the difference — ~15-min onset, up to 36 hrs. Prescribed.</code><div class="cbf"><span class="cc">75/90</span><button class="cp" data-copy="The 3-in-1 behind the difference — ~15-min onset, up to 36 hrs. Prescribed.">Copy</button></div></div>
+        <div class="cl">Headline — ad title (≤90)</div><div class="cb"><code>You&#x27;ve Been Lied To About ED Meds — What {City} Men Just Learned</code><div class="cbf"><span class="cc">64/90</span><button class="cp" data-copy="You&#x27;ve Been Lied To About ED Meds — What {City} Men Just Learned">Copy</button></div></div>
+        <div class="cl">Description — ad body (≤90)</div><div class="cb"><code>Most ED pills use 1 active. This one uses 3 — and works in about 15 minutes.</code><div class="cbf"><span class="cc">76/90</span><button class="cp" data-copy="Most ED pills use 1 active. This one uses 3 — and works in about 15 minutes.">Copy</button></div></div>
       </div></article></div>
 </section>
 
